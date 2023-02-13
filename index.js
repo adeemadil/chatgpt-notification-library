@@ -8,8 +8,18 @@ const api = new ChatGPTClient(process.env.CHAT_GPT_ACCESS_TOKEN, {
   },
 });
 
-const notifications = [];
 const categories = [];
+const app = express();
+const port = 3000;
+
+//Listening to the server
+app.get('/', (req, res) => {
+    return categories;
+  });
+  
+  app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+  });
 
 //Sending a PROMPT to the Chat GPT API
 const res = await api.sendMessage('Can you list 50 types of websites in the world send in-app notifications? just the category');
