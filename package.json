@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@waylaidwanderer/chatgpt-api": "^1.15.2"
+  }
+}
