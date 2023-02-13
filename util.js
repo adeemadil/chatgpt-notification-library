@@ -10,3 +10,5 @@ const extractNumberedList = (text) => {
         return all;
     }, []);
 }
+
+export default extractNumberedList;
