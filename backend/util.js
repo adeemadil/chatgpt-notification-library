@@ -1,5 +1,4 @@
 //Helper functions
-
 const extractNumberedList = (text) => {
     return text.split("\n").reduce((all, current) => {
         const values = current.match(/\d+\.(.*)/);
@@ -10,5 +9,6 @@ const extractNumberedList = (text) => {
         return all;
     }, []);
 }
+
 
 export default extractNumberedList;

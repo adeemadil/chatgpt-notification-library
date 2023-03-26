@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState, useCallback, useEffect } from "react";
 import axios from "axios";
@@ -11,7 +10,7 @@ function App() {
   }, []);
   useEffect(() => {
     serverInformation();
-  }, []);
+  }, [serverInformation]);
 
   return (
     <div className="App">
